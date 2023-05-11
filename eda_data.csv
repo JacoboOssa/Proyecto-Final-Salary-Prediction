@@ -1,0 +1,559 @@
+job_simp,num_comp,avg_salary,Type.of.ownership,job_state,Rating
+data scientist,0,72,Company - Private,NM,3.8
+data scientist,0,87.5,Other Organization,MD,3.4
+data scientist,0,85,Company - Private,FL,4.8
+data scientist,3,76.5,Government,WA,3.8
+data scientist,3,114.5,Company - Private,NY,2.9
+data scientist,3,95,Company - Public,TX,3.4
+data scientist,0,73.5,Company - Private,MD,4.1
+data scientist,0,114,Company - Private,CA,3.8
+data scientist,2,140,Company - Private,NY,4.6
+data scientist,0,163.5,Company - Private,CA,3.5
+data scientist,0,85,Company - Public,VA,4.1
+data scientist,3,139,Company - Public,TX,3.2
+analyst,0,65.5,Company - Private,WA,4.1
+data scientist,3,113.5,Company - Public,MA,3.7
+data engineer,0,146,Subsidiary or Business Segment,NJ,3.6
+data scientist,0,153.5,Company - Private,CA,4.3
+data scientist,0,142.5,Company - Private,CA,4.2
+data scientist,0,87.5,Nonprofit Organization,CO,4
+data scientist,3,105.5,Company - Private,WA,3.2
+data scientist,0,96,Company - Private,TX,3.9
+data scientist,0,112.5,Company - Private,IL,3.8
+data scientist,0,84,Nonprofit Organization,KY,4.3
+data scientist,3,143,Company - Private,VA,4
+data scientist,0,86.5,Company - Public,MA,4
+data scientist,0,99.5,Company - Private,OR,3.5
+analyst,0,47.5,Company - Public,MA,3.7
+data scientist,0,84,Company - Public,CT,4
+data scientist,0,85,Company - Private,FL,4.8
+data scientist,3,76.5,Government,WA,3.8
+data scientist,0,96,Company - Private,MI,3.6
+data scientist,0,114.5,Company - Public,MA,3.8
+data scientist,0,121,Company - Public,CA,3.8
+data scientist,3,112.5,Company - Private,MA,4.7
+analyst,0,106,Company - Private,CA,4.2
+data scientist,1,107,Company - Private,CA,3.5
+data scientist,0,110,Company - Private,MA,4.7
+data scientist,0,147.5,Company - Public,CA,3.5
+data engineer,0,106,Company - Private,NY,3.5
+analyst,3,88,Company - Private,CA,4.2
+data engineer,0,98.5,Company - Private,MA,3.6
+data scientist,0,142.5,Company - Private,CA,4.2
+data scientist,3,130,Company - Public,IL,4.3
+data scientist,0,155,Company - Private,DC,5
+data scientist,3,184.5,Company - Public,WA,3.7
+analyst,0,29.5,Company - Private,CO,3.1
+data scientist,3,81,Company - Public,IL,3.7
+data scientist,0,91,Subsidiary or Business Segment,FL,3.8
+data scientist,3,114.5,Company - Private,MA,3.3
+analyst,0,68,Company - Private,AL,4.6
+data scientist,3,115,Company - Public,NY,3.7
+data scientist,0,109.5,Company - Public,CA,3.7
+data scientist,0,75.5,Company - Public,NM,3.5
+data scientist,3,154.5,Company - Private,CA,4.1
+data scientist,2,143.5,Company - Private,MO,4.7
+data scientist,0,73.5,Company - Private,MD,4.1
+data scientist,3,95,Company - Public,TX,3.4
+data scientist,0,107,Subsidiary or Business Segment,OH,4.4
+data scientist,0,115,Company - Private,NY,4.3
+data scientist,0,139.5,Company - Public,CA,3.8
+data scientist,3,67,Government,WA,3.8
+data scientist,3,85,Company - Public,PA,3.8
+data scientist,0,118,Company - Private,MA,2.8
+data scientist,0,79.5,Company - Private,GA,4.7
+data scientist,4,56.5,Company - Public,MA,3.1
+data scientist,0,128.5,Company - Private,PA,3.2
+director,0,179.5,Company - Public,IL,3.6
+data scientist,3,112,Company - Private,VA,3.9
+data scientist,3,98,Company - Private,PA,3.1
+data scientist,0,128,Company - Public,WA,4
+data scientist,0,150.5,Company - Private,CA,4.3
+data scientist,0,110,Company - Private,VA,3.3
+data scientist,3,113.5,Company - Private,CA,4.4
+data scientist,0,124,Company - Private,CA,3.9
+analyst,0,56.5,Company - Private,PA,4.7
+data scientist,3,130,Nonprofit Organization,MD,4.5
+analyst,3,77.5,Company - Private,IL,4.3
+data engineer,0,87,Company - Private,VA,4
+analyst,0,53.5,Company - Private,WA,4.4
+data scientist,3,139,Company - Public,TX,3.2
+data scientist,0,114,Company - Private,CA,3.8
+data scientist,0,85.5,Company - Private,FL,4.2
+analyst,0,48,Company - Private,LA,3.5
+data scientist,0,85,Company - Public,GA,3.9
+analyst,0,72.5,Company - Private,MD,4.2
+data scientist,3,97.5,Nonprofit Organization,VA,3.2
+data scientist,3,99,Company - Private,VA,3.9
+analyst,3,56.5,Company - Private,WI,3.1
+data scientist,0,133,Company - Private,MD,4.1
+data scientist,0,121,Company - Private,NY,3.8
+data scientist,3,85.5,Company - Private,NY,4.7
+data scientist,3,87.5,Subsidiary or Business Segment,TX,4.3
+data scientist,3,237.5,Company - Private,DC,4.2
+data engineer,3,95.5,Company - Private,NC,3.9
+data scientist,0,104.5,Company - Public,MI,3.3
+analyst,3,56.5,Company - Private,NJ,4.7
+analyst,0,55,Company - Private,AZ,4.3
+data scientist,3,157,Company - Private,CA,4.5
+data engineer,2,78,Company - Private,NJ,3.4
+data scientist,3,113.5,Company - Public,MA,3.7
+data scientist,2,140,Company - Private,NY,4.6
+data scientist,0,132.5,Company - Private,CA,3.2
+data engineer,0,108,Company - Public,CA,4
+data scientist,0,80.5,Company - Private,IN,4.6
+data scientist,0,107.5,Company - Private,MD,2.8
+data engineer,2,95,Company - Private,MN,4.7
+data scientist,3,119.5,Nonprofit Organization,CA,3
+data engineer,3,134,Company - Private,NC,3.2
+data scientist,0,100.5,Company - Private,MA,4.4
+data scientist,0,107.5,Company - Public,OH,3.5
+data engineer,0,122,Company - Private,DC,4
+data engineer,3,92.5,Company - Public,IL,4.3
+analyst,0,62,Company - Private,MD,2.3
+data scientist,0,107.5,Company - Private,CA,3.6
+manager,0,40.5,Company - Private,MO,3.8
+data scientist,3,89.5,Company - Public,VA,3.7
+data scientist,0,81,Company - Private,IL,4.4
+data scientist,3,147,Company - Private,VA,4
+data scientist,3,85,Company - Private,TX,3.2
+mle,0,100.5,Company - Private,CO,4.3
+data scientist,3,97,Company - Private,NY,3.4
+data scientist,0,85,Company - Public,VA,4.1
+data scientist,0,153.5,Company - Private,CA,4.3
+data engineer,0,132.5,Company - Private,FL,5
+data engineer,3,100,Company - Private,IL,4.3
+data scientist,0,105,Company - Private,CO,3.7
+data engineer,0,87,Nonprofit Organization,UT,4.2
+analyst,3,103.5,Company - Private,CA,4.3
+data scientist,3,67,Government,WA,3.8
+data engineer,3,87,Company - Private,DC,3.9
+data scientist,0,137.5,Company - Private,IL,4.3
+data scientist,3,100,Company - Private,OH,3.8
+data engineer,0,106.5,Nonprofit Organization,TN,3.8
+data scientist,3,98.5,Government,WA,3.8
+analyst,0,61,Company - Private,FL,4.8
+data engineer,0,84.5,Company - Private,MA,3.9
+manager,0,109.5,Company - Public,NJ,3.4
+data scientist,0,164,Company - Private,MA,3.6
+data scientist,0,169,Subsidiary or Business Segment,CA,3.9
+data scientist,0,142,Company - Public,CA,3.8
+data scientist,0,107,Company - Private,MD,3.8
+data scientist,2,171.5,Company - Public,CA,3.5
+data scientist,0,96,Company - Private,TX,3.9
+data scientist,0,142.5,Company - Private,CA,4.2
+data engineer,0,107,Nonprofit Organization,UT,4.2
+analyst,3,61.5,Nonprofit Organization,VA,2.9
+data scientist,0,120,Government,WI,2.7
+data scientist,0,150.5,Company - Public,CA,4
+manager,0,87.5,Company - Private,MI,4.3
+data engineer,2,71.5,Company - Public,FL,4.2
+analyst,0,51.5,Subsidiary or Business Segment,CA,3.6
+analyst,0,77.5,Company - Private,NJ,2.8
+data scientist,2,98.5,Company - Private,NJ,3.3
+data scientist,0,225,Company - Private,CA,-1
+data scientist,0,147,Company - Public,NY,3.4
+analyst,0,61,Company - Private,MO,4.1
+mle,0,120,College / University,PA,2.6
+data scientist,0,148,Company - Private,CA,3.9
+analyst,2,59,Company - Private,AL,4.7
+data scientist,0,146.5,Company - Public,MA,3.7
+mle,0,133,Company - Private,IL,3
+data scientist,0,140.5,Company - Private,UT,4.7
+data engineer,0,70.5,Company - Private,LA,3.7
+mle,2,181,Company - Private,CA,3.9
+data engineer,3,205,Company - Private,CA,4.1
+analyst,0,48.5,Company - Private,CA,3.6
+mle,0,124,College / University,PA,2.6
+manager,0,64,Nonprofit Organization,CA,3.5
+data engineer,3,98,Company - Private,TN,3
+data engineer,3,107.5,Company - Public,IL,3.4
+data scientist,0,112.5,Company - Private,IL,3.8
+data scientist,3,89,Company - Public,VA,3.7
+data scientist,0,100.5,Company - Private,WI,4.8
+analyst,3,65,Company - Private,NY,3.8
+data scientist,0,72.5,Subsidiary or Business Segment,TX,4.3
+analyst,0,61,Company - Private,FL,4.8
+manager,0,109.5,Company - Public,NJ,3.4
+data engineer,0,84.5,Company - Private,MA,3.9
+data scientist,0,87.5,Company - Private,IL,3.4
+analyst,3,92.5,Company - Public,CA,3.1
+data scientist,3,81.5,Nonprofit Organization,VA,3.2
+analyst,2,79,Company - Private,OH,4.3
+data scientist,0,164,Company - Private,MA,3.6
+data scientist,0,169,Subsidiary or Business Segment,CA,3.9
+data scientist,0,142,Company - Public,CA,3.8
+analyst,0,47.5,Nonprofit Organization,CA,2.8
+analyst,0,69,Company - Private,CA,3.4
+analyst,0,49,Company - Private,ID,4
+data scientist,2,171.5,Company - Public,CA,3.5
+data scientist,0,107,Company - Private,MD,3.8
+analyst,0,59,Company - Private,NJ,3.7
+data scientist,0,88.5,Company - Private,IN,3.5
+data engineer,0,107,Nonprofit Organization,UT,4.2
+data scientist,0,86.5,Company - Public,MA,4
+data scientist,0,84,Nonprofit Organization,KY,4.3
+data engineer,3,88,Company - Public,TN,4.4
+data engineer,3,100,Company - Private,IL,4.1
+analyst,3,61.5,Nonprofit Organization,VA,2.9
+data scientist,3,96.5,Company - Public,OR,2.5
+analyst,3,76,Company - Private,MN,4.2
+data scientist,0,15.5,Company - Private,NY,3.9
+data scientist,0,83.5,Company - Private,TX,4.3
+data scientist,0,120,Government,WI,2.7
+data scientist,0,163,Subsidiary or Business Segment,CA,3.9
+analyst,1,100,Nonprofit Organization,RI,3.4
+analyst,0,50,Nonprofit Organization,DC,3.3
+data engineer,0,93,Company - Private,TX,3.4
+data scientist,0,94.5,Company - Private,OH,3
+data scientist,0,150.5,Company - Public,CA,4
+data scientist,3,102,Company - Public,NC,3.7
+manager,0,87.5,Company - Private,MI,4.3
+data scientist,0,84,Company - Public,CT,4
+data scientist,3,143,Company - Private,VA,4
+data scientist,0,155,Company - Private,PA,3.2
+data engineer,2,71.5,Company - Public,FL,4.2
+data scientist,0,108,Company - Private,CA,3.9
+analyst,0,51.5,Subsidiary or Business Segment,CA,3.6
+analyst,0,77.5,Company - Private,NJ,2.8
+analyst,0,63.5,Company - Private,ID,4.2
+data scientist,0,109,Company - Private,CA,4
+data scientist,0,96,Company - Public,TN,3.5
+data scientist,0,225,Company - Private,CA,-1
+data engineer,3,101,Company - Public,CA,3.2
+data scientist,2,98.5,Company - Private,NJ,3.3
+data engineer,3,77.5,Company - Private,IA,3.9
+data scientist,0,147,Company - Public,NY,3.4
+data scientist,3,90,Company - Public,CA,3.5
+analyst,0,58,Company - Public,NJ,4.3
+analyst,0,61,Company - Private,MO,4.1
+mle,0,120,College / University,PA,2.6
+data scientist,0,128,Company - Public,NY,3.6
+data scientist,0,99.5,Company - Private,OR,3.5
+data scientist,0,96,Company - Private,MI,3.6
+data scientist,0,101,Company - Public,DC,2.3
+data scientist,0,148,Company - Private,CA,3.9
+data scientist,3,142,Company - Private,VA,4
+data scientist,0,169,Company - Private,CA,4.1
+analyst,2,59,Company - Private,AL,4.7
+data engineer,0,75.5,Company - Private,TX,4.6
+data scientist,3,139,Company - Public,NY,3.7
+data engineer,3,102.5,Company - Public,MA,3.7
+data scientist,0,146.5,Company - Public,MA,3.7
+analyst,0,81,Company - Private,MA,3.6
+mle,0,133,Company - Private,IL,3
+analyst,3,77,Subsidiary or Business Segment,DC,3.4
+data engineer,0,92,Company - Public,VA,4.1
+data scientist,0,121,Company - Public,MA,3.8
+data engineer,0,162.5,Company - Public,CA,4
+data engineer,0,90.5,Company - Private,IN,4.4
+data scientist,0,114.5,Company - Public,MA,3.8
+data scientist,0,121,Company - Public,CA,3.8
+data scientist,3,110,Subsidiary or Business Segment,TX,2.2
+analyst,0,70.5,Company - Public,VA,4.1
+data engineer,0,70.5,Company - Private,LA,3.7
+data scientist,3,76.5,Government,WA,3.8
+data engineer,0,92,Company - Private,MA,3.6
+data scientist,0,140.5,Company - Private,UT,4.7
+data scientist,0,164.5,Company - Private,CA,3.3
+analyst,0,44,Company - Public,FL,3.4
+data engineer,0,109,Company - Private,VA,4.4
+data engineer,3,149.5,Company - Private,TX,3.8
+data engineer,0,65.5,Company - Private,DC,3.5
+data scientist,0,124.5,Company - Public,NC,3.5
+data engineer,3,114,Company - Private,CA,2.9
+analyst,3,49,Nonprofit Organization,PA,3.9
+analyst,3,71,Company - Private,VA,3.7
+director,0,101,Company - Private,MA,3.6
+data scientist,1,107,Company - Private,CA,3.5
+data scientist,3,112.5,Company - Private,MA,4.7
+mle,2,181,Company - Private,CA,3.9
+analyst,3,61,Company - Public,IL,3.7
+data engineer,3,205,Company - Private,CA,4.1
+manager,0,63,Company - Private,MA,3.6
+data engineer,0,94.5,Company - Private,CA,3.5
+analyst,0,48.5,Company - Private,CA,3.6
+mle,0,87,Company - Public,KS,3.7
+data engineer,3,64.5,Company - Private,NY,3.2
+data engineer,3,154.5,Company - Public,MA,3.7
+mle,0,124,College / University,PA,2.6
+data scientist,0,128.5,Company - Private,IL,4.4
+manager,0,64,Nonprofit Organization,CA,3.5
+data engineer,3,98,Company - Private,TN,3
+data scientist,0,142.5,Company - Private,CA,4.2
+data scientist,3,137,Company - Public,NY,3.9
+data engineer,0,99,Nonprofit Organization,CO,4
+data scientist,0,139.5,Company - Private,MA,4.4
+data engineer,0,109,Company - Private,MD,3.4
+director,3,254,Company - Private,IL,3.3
+analyst,0,45.5,Company - Private,OH,3.3
+data engineer,0,122.5,Company - Private,IN,4.5
+data scientist,0,140,Company - Public,IL,3.9
+manager,0,61.5,Company - Private,CA,4.8
+data engineer,0,90,Company - Private,MA,3.4
+data scientist,0,91,Subsidiary or Business Segment,FL,3.8
+data scientist,0,155,Company - Private,DC,5
+data scientist,0,167.5,Company - Public,NY,4
+analyst,3,60,Company - Public,WI,3.8
+data scientist,0,180,Company - Private,CA,3.9
+analyst,3,65,Company - Private,NY,3.8
+data engineer,3,112.5,Company - Private,NC,4.3
+analyst,3,87.5,Company - Private,NY,1.9
+data engineer,0,100,Company - Public,AZ,3.4
+data engineer,0,85,Company - Private,VA,4.4
+data scientist,0,122,Company - Private,FL,3.9
+data engineer,0,138.5,Company - Private,TX,4.7
+data scientist,3,107.5,Company - Private,MA,3.4
+data engineer,3,107.5,Company - Public,IL,3.4
+data engineer,2,162,Company - Private,CA,4
+data scientist,3,110.5,Company - Public,OH,3.4
+data scientist,3,81,Company - Public,IL,3.7
+data scientist,3,130,Company - Public,IL,4.3
+data engineer,0,115.5,Subsidiary or Business Segment,IA,3.7
+data scientist,3,80.5,Government,WA,3.8
+analyst,0,43,Company - Private,IA,4.6
+director,0,140,Company - Public,MA,4.4
+analyst,3,66.5,Company - Private,PA,3
+data engineer,0,94.5,Company - Private,CA,4.7
+data scientist,3,119,Government,WA,3.8
+analyst,0,13.5,Company - Public,TN,2.7
+director,3,194.5,Company - Private,IL,3.3
+data scientist,0,105.5,College / University,TX,3.7
+analyst,0,62.5,Company - Public,AL,3.7
+director,0,161.5,Company - Private,NJ,3.6
+analyst,2,72.5,Other Organization,PA,2.1
+data engineer,0,139,Company - Public,CA,3.9
+data engineer,2,136.5,Company - Private,CA,3.9
+data scientist,3,74.5,Company - Private,NY,3.8
+data scientist,0,75.5,Company - Public,NM,3.5
+data scientist,2,143.5,Company - Private,MO,4.7
+data scientist,0,101,Company - Private,VA,5
+data engineer,0,92,Company - Private,MA,3.6
+data scientist,3,76.5,Government,WA,3.8
+data scientist,0,140.5,Company - Private,UT,4.7
+data scientist,0,116.5,Company - Public,NJ,3.6
+mle,0,232.5,Subsidiary or Business Segment,CA,4.7
+data scientist,0,120.5,Company - Private,CA,3.5
+data scientist,0,153,Company - Public,CA,2.7
+data scientist,0,127,Company - Private,CA,3.4
+data scientist,0,85.5,Company - Private,CA,4.7
+data scientist,0,76.5,Company - Public,NY,2.8
+data scientist,3,128,Subsidiary or Business Segment,NY,3.5
+data engineer,0,91.5,Company - Private,PA,3.2
+data scientist,0,164.5,Company - Private,CA,3.3
+analyst,0,44,Company - Public,FL,3.4
+data engineer,3,149.5,Company - Private,TX,3.8
+data engineer,0,65.5,Company - Private,DC,3.5
+data engineer,0,109,Company - Private,VA,4.4
+data engineer,3,177,Subsidiary or Business Segment,CA,3.7
+data scientist,0,107,Company - Private,VA,4.7
+data scientist,3,154.5,Company - Private,CA,4.1
+data scientist,0,113.5,Company - Private,CA,4
+data scientist,0,124.5,Company - Public,NC,3.5
+data scientist,1,143.5,Company - Private,CA,2.5
+data scientist,0,113.5,Company - Private,CA,3.9
+data scientist,0,101.5,Company - Public,VA,3.4
+analyst,3,73,Subsidiary or Business Segment,NY,3.6
+data scientist,2,80.5,Company - Public,NY,3.5
+data scientist,0,110.5,Company - Private,NY,-1
+data engineer,3,114,Company - Private,CA,2.9
+data scientist,0,139.5,Company - Private,CA,3.5
+data scientist,0,145.5,Company - Private,NY,4.8
+data scientist,3,87,Company - Private,NY,4
+data scientist,0,100.5,Company - Private,MA,4.2
+data scientist,3,147,Company - Public,NY,3.8
+data engineer,3,110.5,Company - Private,NY,3.7
+analyst,3,49,Nonprofit Organization,PA,3.9
+data scientist,0,94,Company - Private,MA,4.6
+data scientist,1,123.5,Company - Public,NY,4.3
+analyst,3,71,Company - Private,VA,3.7
+data engineer,0,73,Company - Public,OR,4
+director,0,101,Company - Private,MA,3.6
+mle,2,181,Company - Private,CA,3.9
+data scientist,0,109.5,Company - Public,CA,3.7
+data scientist,3,184.5,Company - Public,WA,3.7
+data scientist,0,165,Company - Private,NY,3.9
+analyst,3,61,Company - Public,IL,3.7
+data engineer,3,205,Company - Private,CA,4.1
+analyst,0,59.5,School / School District,NY,3.1
+manager,0,63,Company - Private,MA,3.6
+analyst,2,66,Company - Private,NY,3.6
+data engineer,0,94.5,Company - Private,CA,3.5
+data scientist,3,75.5,Company - Private,NY,4.2
+mle,2,87,Company - Public,VA,4
+data scientist,3,140,Company - Public,MD,3.9
+data scientist,0,86,Company - Private,MD,3.7
+data scientist,0,116.5,Company - Private,CA,4.4
+mle,0,87,Company - Public,KS,3.7
+analyst,0,48.5,Company - Private,CA,3.6
+data engineer,3,80,Company - Private,TX,3.4
+data scientist,0,173,Company - Public,CA,3.7
+data engineer,3,68.5,Company - Private,AZ,3.5
+data scientist,0,172,Company - Private,NY,4.4
+data scientist,3,114.5,Company - Private,MA,3.3
+data scientist,3,69.5,Nonprofit Organization,MA,3.2
+data engineer,3,64.5,Company - Private,NY,3.2
+data scientist,2,97.5,Company - Private,NY,4
+data engineer,3,154.5,Company - Public,MA,3.7
+mle,0,124,College / University,PA,2.6
+data scientist,2,95,Company - Private,NY,3.4
+data scientist,0,128.5,Company - Private,IL,4.4
+data scientist,3,194,Subsidiary or Business Segment,CA,3.2
+data scientist,0,104.5,Company - Public,NY,3.5
+data engineer,0,85.5,Company - Private,NC,4.2
+analyst,0,50,Nonprofit Organization,UT,4.2
+data engineer,3,113,Company - Public,CA,3.1
+data scientist,1,153,Company - Private,CA,4.3
+analyst,3,123.5,Company - Public,CA,3.3
+analyst,0,47,Company - Private,NY,3.9
+manager,0,64,Nonprofit Organization,CA,3.5
+data scientist,3,137,Company - Public,NY,3.9
+data engineer,3,98,Company - Private,TN,3
+data scientist,3,115,Company - Public,NY,3.7
+data scientist,0,133.5,Company - Public,CO,3.5
+data engineer,0,99,Nonprofit Organization,CO,4
+data engineer,0,109,Company - Private,TN,3.2
+data engineer,0,109,Company - Private,MD,3.4
+data scientist,0,139.5,Company - Private,MA,4.4
+director,3,254,Company - Private,IL,3.3
+mle,3,125,Company - Private,NY,3.2
+analyst,0,45.5,Company - Private,OH,3.3
+analyst,0,54,Company - Public,MA,3.7
+data engineer,0,122.5,Company - Private,IN,4.5
+analyst,3,37.5,Subsidiary or Business Segment,FL,3
+analyst,3,53.5,Company - Private,NY,3.8
+data scientist,0,140,Company - Public,IL,3.9
+manager,0,61.5,Company - Private,CA,4.8
+data scientist,0,79.5,Company - Private,GA,4.7
+data scientist,0,168,Company - Private,CA,4.7
+data engineer,0,90,Company - Private,MA,3.4
+analyst,0,138.5,Company - Public,CA,3.9
+manager,0,68.5,Company - Private,MA,3.6
+data engineer,3,102.5,Company - Public,TN,4.4
+manager,0,127.5,Company - Private,PA,3.2
+analyst,0,72,Nonprofit Organization,UT,4.2
+analyst,3,47,Company - Private,UT,3.1
+data engineer,0,65,Subsidiary or Business Segment,AL,3.8
+analyst,3,60,Company - Public,WI,3.8
+data scientist,0,167.5,Company - Public,NY,4
+analyst,3,65,Company - Private,NY,3.8
+analyst,3,94,Company - Private,VA,4
+analyst,3,87.5,Company - Private,NY,1.9
+data engineer,3,97,Company - Private,VA,4
+data engineer,3,112.5,Company - Private,NC,4.3
+data scientist,0,114.5,Company - Public,MA,3.8
+data scientist,0,115,Company - Private,NY,4.3
+manager,0,74,Company - Private,PA,3.2
+data engineer,0,100,Company - Public,AZ,3.4
+data scientist,0,121,Company - Public,MA,3.8
+analyst,3,121.5,Company - Private,CA,4.5
+data scientist,0,122,Company - Private,FL,3.9
+data engineer,0,85,Company - Private,VA,4.4
+data engineer,0,60.5,Company - Private,AZ,3.4
+data scientist,0,180,Company - Private,CA,3.9
+data engineer,0,118.5,Company - Private,VA,3.3
+data scientist,3,107.5,Company - Private,MA,3.4
+data engineer,0,138.5,Company - Private,TX,4.7
+data engineer,3,58.5,Company - Private,IL,3.8
+data engineer,3,107.5,Company - Public,IL,3.4
+manager,2,63.5,Company - Private,CA,3.9
+data scientist,3,107,Company - Public,CA,4.1
+data engineer,0,105.5,Company - Public,VA,3.7
+data engineer,3,83,Company - Private,CA,2.8
+data engineer,2,162,Company - Private,CA,4
+data scientist,3,110.5,Company - Public,OH,3.4
+data engineer,0,115.5,Subsidiary or Business Segment,IA,3.7
+data scientist,3,80.5,Government,WA,3.8
+analyst,0,43,Company - Private,IA,4.6
+director,0,140,Company - Public,MA,4.4
+director,0,172,Company - Public,MA,4
+analyst,3,66.5,Company - Private,PA,3
+data engineer,0,94.5,Company - Private,CA,4.7
+manager,0,221.5,Company - Private,CA,4.2
+data scientist,3,119,Government,WA,3.8
+data engineer,0,95.5,Company - Private,IL,3.5
+director,3,194.5,Company - Private,IL,3.3
+analyst,0,13.5,Company - Public,TN,2.7
+analyst,0,173,Company - Private,NJ,3.3
+data scientist,0,105.5,College / University,TX,3.7
+analyst,0,62.5,Company - Public,AL,3.7
+data scientist,3,85,Company - Public,PA,3.8
+data scientist,3,147.5,Company - Public,MD,3.9
+director,0,161.5,Company - Private,NJ,3.6
+data engineer,0,81,Nonprofit Organization,VA,3.7
+analyst,2,72.5,Other Organization,PA,2.1
+data engineer,0,139,Company - Public,CA,3.9
+data engineer,2,136.5,Company - Private,CA,3.9
+analyst,0,83,Company - Private,NY,3.2
+data scientist,3,74.5,Company - Private,NY,3.8
+analyst,0,85.5,Company - Private,CA,2.2
+mle,0,107.5,College / University,PA,2.6
+analyst,0,44.5,Nonprofit Organization,WA,3.4
+analyst,3,107.5,Company - Private,MD,3.3
+analyst,0,69.5,Company - Private,PA,3.7
+manager,0,96.5,Company - Public,MA,3.8
+director,3,53,Company - Private,MA,3.3
+data engineer,0,103,Company - Private,CA,2.7
+data scientist,0,139.5,Company - Public,CA,3.8
+data scientist,3,67,Government,WA,3.8
+analyst,2,66,Company - Private,NY,3.6
+data engineer,0,94.5,Company - Private,CA,3.5
+data scientist,0,114,Company - Private,NJ,3.6
+data scientist,3,75.5,Company - Private,NY,4.2
+data scientist,0,96,School / School District,MO,3.5
+mle,2,87,Company - Public,VA,4
+data scientist,0,86,Company - Private,MD,3.7
+data scientist,0,116.5,Company - Private,CA,4.4
+analyst,0,48.5,Company - Private,CA,3.6
+mle,0,87,Company - Public,KS,3.7
+data engineer,3,80,Company - Private,TX,3.4
+data scientist,0,173,Company - Public,CA,3.7
+data engineer,3,68.5,Company - Private,AZ,3.5
+data scientist,3,69.5,Nonprofit Organization,MA,3.2
+data scientist,0,107,Subsidiary or Business Segment,OH,4.4
+data scientist,3,112,Company - Private,VA,3.9
+data scientist,0,96.5,Company - Private,DC,3.4
+data engineer,3,154.5,Company - Public,MA,3.7
+data scientist,2,95,Company - Private,NY,3.4
+data scientist,2,97.5,Company - Private,NY,4
+data scientist,0,128.5,Company - Private,IL,4.4
+mle,0,124,College / University,PA,2.6
+data scientist,3,194,Subsidiary or Business Segment,CA,3.2
+analyst,0,50,Nonprofit Organization,UT,4.2
+data scientist,0,104.5,Company - Public,NY,3.5
+data scientist,0,69.5,Company - Private,AZ,4.3
+data scientist,0,121,Company - Private,CA,2.6
+data engineer,0,85.5,Company - Private,NC,4.2
+data engineer,3,113,Company - Public,CA,3.1
+data scientist,0,103,Subsidiary or Business Segment,CA,3.8
+data scientist,1,153,Company - Private,CA,4.3
+data scientist,3,106.5,Nonprofit Organization,VA,3.2
+data scientist,0,130,Company - Private,MI,5
+analyst,3,123.5,Company - Public,CA,3.3
+manager,0,64,Nonprofit Organization,CA,3.5
+analyst,0,47,Company - Private,NY,3.9
+data scientist,3,140,Company - Public,MD,3.9
+data scientist,0,89,Company - Private,WA,3.4
+data engineer,3,98,Company - Private,TN,3
+data scientist,3,137,Company - Public,NY,3.9
+data engineer,0,99,Nonprofit Organization,CO,4
+data engineer,0,109,Company - Private,TN,3.2
+data engineer,0,109,Company - Private,MD,3.4
+data scientist,0,139.5,Company - Private,MA,4.4
+director,3,254,Company - Private,IL,3.3
+mle,3,125,Company - Private,NY,3.2
+data scientist,0,128.5,Company - Private,PA,3.2
+analyst,0,45.5,Company - Private,OH,3.3
+data engineer,0,122.5,Company - Private,IN,4.5
+analyst,3,37.5,Subsidiary or Business Segment,FL,3
+analyst,0,54,Company - Public,MA,3.7
+analyst,3,53.5,Company - Private,NY,3.8
+data scientist,0,140,Company - Public,IL,3.9
+manager,0,61.5,Company - Private,CA,4.8
+data engineer,0,90,Company - Private,MA,3.4
+mle,0,111,Company - Private,CA,4.1
+analyst,0,138.5,Company - Public,CA,3.9
+manager,0,68.5,Company - Private,MA,3.6
+data engineer,2,87.5,Company - Private,CA,3.9
+data engineer,3,102.5,Company - Public,TN,4.4
+manager,0,127.5,Company - Private,PA,3.2

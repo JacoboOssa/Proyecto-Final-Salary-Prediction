@@ -18,50 +18,37 @@ library(kableExtra)
 library(pastecs)
 library(readr)
 
-#### mapa con colores por grupos, librerias
-install.packages("sf")
-library(glue)
-library(dplyr)
-library(ggplot2)
-library(readxl)
-library(stringr)
-library(colorspace)
-library(sf)
-
-#Leer la base de datos Jacobo
-Salary_Prediction<-read.csv("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Base De Datos/SALARY/eda_data.csv")
-View(Salary_Prediction)
 
 
 #Leer la base de datos Daniel
-Salary_Prediction <- read.csv("C:/Users/Danie/OneDrive/Semestre4/Inferencia estadistica/ProyectoR/eda_data.csv")
-View(Salary_Prediction)
-
-#Base de datos de la India Jacobo
-Data_Science_Jobs_in_India <- read_csv("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Proyecto Final Data Jobs/Data Science Jobs in India/Data_Science_Jobs_in_India.csv")
-View(Data_Science_Jobs_in_India)
+#Salary_Prediction <- read.csv("C:/Users/Danie/OneDrive/Semestre4/Inferencia estadistica/ProyectoR/eda_data.csv")
+#View(Salary_Prediction)
 
 #Base de datos de la India Daniel
-Data_Science_Jobs_in_India <- read_csv("C:/Users/Danie/OneDrive/Semestre4/Inferencia estadistica/ProyectoR/Data_Science_Jobs_in_India.csv")
-View(Data_Science_Jobs_in_India)
+#Data_Science_Jobs_in_India <- read_csv("C:/Users/Danie/OneDrive/Semestre4/Inferencia estadistica/ProyectoR/Data_Science_Jobs_in_India.csv")
+#View(Data_Science_Jobs_in_India)
 
 #Base de datos de Estados Unidos Daniel
-data_cleaned_2021 <- read_csv("C:/Users/Danie/OneDrive/Semestre4/Inferencia estadistica/ProyectoR/data_cleaned_2021.csv")
-View(data_cleaned_2021)
+#data_cleaned_2021 <- read_csv("C:/Users/Danie/OneDrive/Semestre4/Inferencia estadistica/ProyectoR/data_cleaned_2021.csv")
+#View(data_cleaned_2021)
+
+#Base de datos de la India Jacobo
+Data_Science_Jobs_in_India <- read_csv("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Proyecto-Final-Salary-Prediction/Data Science Jobs in India/Data_Science_Jobs_in_India.csv")
+View(Data_Science_Jobs_in_India)
 
 #Base de Datos de Estados Unidos Jacobo
-data_cleaned_2021 <- read_csv("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Proyecto Final Data Jobs/Data Science Jobs in USA(2021)/data_cleaned_2021.csv")
+data_cleaned_2021 <- read.csv("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Proyecto-Final-Salary-Prediction/Data Science Jobs in USA (2021)/data_cleaned_2021.csv")
 View(data_cleaned_2021)
 
+#Importar Datos Salary Prediction 
+Salary_Prediction <- read_csv("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Proyecto-Final-Salary-Prediction/eda_data.csv")
+View(Salary_Prediction)
 
-#Importar Data Cleaned 
-Salary_Prediction_Cleaned <- read_excel("C:/Users/Jacobo Ossa/OneDrive - Universidad Icesi (@icesi.edu.co)/Escritorio/Semestre_4/Inferencia Estadistica/Proyecto Final Data Jobs/Data Science Jobs in USA (Actualidad)/Salary_Prediction_Cleaned.xlsx")
-View(Salary_Prediction_Cleaned)
 
 
 
 # AGRUPAR LOS ESTADOS POR REGIONES
-Salary_Prediction_Cleaned <- Salary_Prediction_Cleaned %>%
+Salary_Prediction <- Salary_Prediction %>%
   mutate(job_region = case_when(job_state == "WA" | job_state == "OR" | job_state == "CA" | job_state == "NV" 
                                 | job_state == "AZ" | job_state == "UT" | job_state == "ID" | job_state == "MT" 
                                 | job_state == "WY" | job_state == "CO" | job_state == "NM" | job_state == "AK" 
@@ -82,21 +69,21 @@ Salary_Prediction_Cleaned <- Salary_Prediction_Cleaned %>%
 
 
 #AGRUPAR EL RATING POR INTERVALO
-Salary_Prediction_Cleaned <- Salary_Prediction_Cleaned %>% 
-  mutate(intervalos = cut(Salary_Prediction_Cleaned$Rating, breaks = c(0,1,2,3,4,5)))
+Salary_Prediction <- Salary_Prediction %>% 
+  mutate(intervalos = cut(Salary_Prediction$Rating, breaks = c(0,1,2,3,4,5)))
 
 #AGRUPAR EL SALARIO POR INTERVALO
-Salary_Prediction_Cleaned <- Salary_Prediction_Cleaned %>% 
-  mutate(avg_salary_Intervalos = cut(Salary_Prediction_Cleaned$avg_salary, breaks = c(13.5,73.5,133.5,193.5,253.5,254)))
+Salary_Prediction <- Salary_Prediction %>% 
+  mutate(avg_salary_Intervalos = cut(Salary_Prediction$avg_salary, breaks = c(13.5,73.5,133.5,193.5,253.5,254)))
 
 #Na.omit en el nuevo dataframe
-Salary_Prediction_Cleaned<- na.omit(Salary_Prediction_Cleaned)
+Salary_Prediction<- na.omit(Salary_Prediction)
 
 #PROMEDIO DE AVG_SALARY CON TIPO DE EMPRESA
-meanOfSalary<-aggregate(Salary_Prediction_Cleaned$avg_salary ~ Salary_Prediction_Cleaned$Type.of.ownership, data = Salary_Prediction_Cleaned, FUN = mean)
+meanOfSalary<-aggregate(Salary_Prediction$avg_salary ~ Salary_Prediction$Type.of.ownership, data = Salary_Prediction, FUN = mean)
 
 #PROMEDIO DE RATING CON TIPO DE EMPRESA
-meanOfRating<-aggregate(Salary_Prediction_Cleaned$Rating ~ Salary_Prediction_Cleaned$Type.of.ownership, data = Salary_Prediction_Cleaned, FUN = mean)
+meanOfRating<-aggregate(Salary_Prediction$Rating ~ Salary_Prediction$Type.of.ownership, data = Salary_Prediction, FUN = mean)
 
 
 
@@ -164,18 +151,18 @@ barplot(table(Salary_Prediction$Type.of.ownership), col = c("lightblue"),
 
 #Tabla Frecuencia Relativa
 ####
-Frecuencia_absoluta<- table(Salary_Prediction_Cleaned$job_region)
+Frecuencia_absoluta<- table(Salary_Prediction$job_region)
 Frecuencia_absoluta
 ####
 
 #Tabla Frecuencia Relativa porcentual
 ####
-Frecuencia_relativa <- prop.table(table(Salary_Prediction_Cleaned$job_region))
+Frecuencia_relativa <- prop.table(table(Salary_Prediction$job_region))
 Frecuencia_relativa
 ####
 ###Tabla de frecuencias
 ####
-tabla_frec_job_region = Salary_Prediction_Cleaned %>% group_by(job_region) %>%
+tabla_frec_job_region = Salary_Prediction %>% group_by(job_region) %>%
   summarize(Frecuencia_absoluta=n())%>%
   mutate(Frecuencia_relativa=Frecuencia_absoluta/sum(Frecuencia_absoluta)*100)
 
@@ -186,7 +173,7 @@ kable(tabla_frec_job_region)%>%
 ####
 #Diagrama De Barras
 ####
-barplot(table(Salary_Prediction_Cleaned$job_region), col = c("lightblue"),
+barplot(table(Salary_Prediction$job_region), col = c("lightblue"),
         main = "Diagrama de barras de las frecuencias absolutas\n de la variable \"Job_State\"")
 
 
@@ -220,10 +207,6 @@ kable(tabla_frec_job_state)%>%
 barplot(table(Salary_Prediction$job_state), col = c("lightblue"),
         main = "Diagrama de barras de las frecuencias absolutas\n de la variable \"Job_State\"")
 
-#Intervalo de confianza para las personas que trabajan en el estado NY o Nueva York
-prop.test(60, 558, p = NULL,
-          conf.level = 0.95, correct = FALSE)
-
 
 
 ####
@@ -246,7 +229,7 @@ CrossTab_SalarioPromedio_Vs_Estado <- crosstab(Salary_Prediction$job_state, Sala
 CrossTab_SalarioPromedio_Vs_Estado
 
 SalarioPromedioVSregion<-cut(Salary_Prediction$avg_salary, c(seq(from = 13, to = 255, by = 48.1),5), include.lowest=TRUE)
-CrossTab_SalarioPromedio_Vs_Estado <- crosstab(Salary_Prediction_Cleaned$job_region, SalarioPromedioVSestado, prop.c = TRUE, plot=FALSE)
+CrossTab_SalarioPromedio_Vs_Estado <- crosstab(Salary_Prediction$job_region, SalarioPromedioVSestado, prop.c = TRUE, plot=FALSE)
 CrossTab_SalarioPromedio_Vs_Estado 
 
 
@@ -518,20 +501,20 @@ eda(Rating)
 
 ## Intervalo de confianza para la variable num_comp o numero de competidores
 ### Queremos ver dentro de que intervalos se encuentra la media de la variable numero de competidores
-t.test(num_comp, mu=1.081)
+t.test(Salary_Prediction$num_comp, mu=1.081)
 ##Con un nivel de confianza del 5% podemos decir que el promedio de competidores por un puesto de trabajo en data science
 ##en Estados Unidos esta entre 0.9649991 y 1.1962912
 
 
 ## Intervalo de confianza para la variable avg_salary o salario promedio
 ### Queremos ver dentro de que intervalos se encuentra la media de la variable promedio
-t.test(avg_salary, mu=103.351)
+t.test(Salary_Prediction$avg_salary, mu=103.351)
 ## Podemos afirmar con un nivel de confianza del 5% que el salario promedio para un trabajo en el area de 
 ## data science en Estados Unidos esta entre 100.451 y 106.251 dolares
 
 ## Intervalo de confianza para la variable rating o puntuacion
 ### Queremos ver dentro de que intervalos se encuentra la media de la variable puntuacion
-t.test(Rating)
+t.test(Salary_Prediction$Rating)
 ## Luego de realizar el intervalo de confianza, podemos afirmar con un nivel de confianza del 5% que el rating o la 
 ## puntuaciono promedioi de las empresas en data science en Estados Unidos se encuentra entre 
 ## 3.699533 y 3.796628
@@ -586,40 +569,81 @@ t.test(Salary_Prediction$Rating,
 
 #HIPOTESIS PARA LA RELACION DE MUESTRAS INDEPENDIENTES
 
-#x=
-#y=
+#Deseamos saber si el salario de los trbajadores en data science son mayores en una empresa privada o en una empresa 
+#publica
+
+#Agrupamos los datos de los salarios para la compañia privada y Sacamos las variznas de la compañia privada:
+
+salarios_compañia_Priv <- Salary_Prediction %>%
+  filter(Type.of.ownership == "Company - Private") %>%
+  select(avg_salary)
+
+# Imprimir los salarios
+print(salarios_compañia_Priv)
+
+#Sacamos la varianza de los datos de los salarios de la compañia privada 
+varianzaPriv <- var(salarios_compañia_Priv)
+varianzaPriv
+
+##Como sacar la desviacion:
+salarios_compañia_Priv <- unlist(salarios_compañia_Priv)
+
+# Calcular la desviación estándar de los salarios de la compañía A
+#desviacion_compañia_Priv <- sd(salarios_compañia_Priv)
+
+# Imprimir el resultado
+#print(desviacion_compañia_Priv)
+
+#Agrupamos los datos de los salarios para la compañia publica y Sacamos las varianzas de la compañia publica:
+
+salarios_compañia_Pub <- Salary_Prediction %>%
+  filter(Type.of.ownership == "Company - Public") %>%
+  select(avg_salary)
+
+# Imprimir los salarios
+print(salarios_compañia_Pub)
+
+#Sacamos la varianza de los datos de los salarios de la compañia privada 
+varianzaPub <- var(salarios_compañia_Pub)
+varianzaPub
+
+##Como sacar la desviacion:
+salarios_compañia_Pub <- unlist(salarios_compañia_Pub)
+
+# Calcular la desviación estándar de los salarios de la compañía A
+#salarios_compañia_Pub <- sd(salarios_compañia_Pub)
+
+# Imprimir el resultado
+#print(salarios_compañia_Pub)
+
+x=salarios_compañia_Priv
+y=salarios_compañia_Pub
 
 #Hacemos prueba de varianza
 
-#var.test(x,y, alternative = "two.sided",conf.level = 0.95)
+var.test(salarios_compañia_Priv,salarios_compañia_Pub, alternative = "two.sided",conf.level = 0.95)
+
+#Dado que el valor p es menor que el alpha utilizado del 5%, rechazamos h0 y asumimos varianzas diferentes
 
 #En caso de varianzas distintas hacemos prueba T
 
-#t.test(BaseEEUU$ConvertedCompYearly, BaseColombia$ConvertedCompYearly,
-#       alternative = "greater",
-#       mu = 0, paired = FALSE, var.equal = FALSE,
-#       conf.level = 0.95)
+t.test(salarios_compañia_Priv,salarios_compañia_Pub,
+       alternative = "greater",
+       mu = 0, paired = FALSE, var.equal = FALSE,
+       conf.level = 0.95)
+
+#Nuestro valor p es mayor que el alpha utilizado, no rechazamos h0, no hay suficiente evidencia para concluir que
+# el salario en las empresas privadas es mayor
 
 #Valor crítico t.
 #qt (p = 0.95, df = 14960, lower.tail = TRUE)
 
 
 
-#ANOVA TIPO DE COMPAÑIA vs SALARIO
-company <-as.factor(Salary_Prediction_Cleaned$Type.of.ownership)
-#boxplot(Salary_Prediction_Cleaned$avg_salary~Salary_Prediction_Cleaned$Type.of.ownership)
-tapply(Salary_Prediction_Cleaned$avg_salary,Salary_Prediction_Cleaned$Type.of.ownership, mean)
-anova<-aov(lm(Salary_Prediction_Cleaned$avg_salary~company))
-summary(anova)
-TukeyHSD(anova)
-
-#
-#
-#
 
 #Crear nuevo dataframe con unicamente 3 tipos de compañia
 # Filtrar las tres compañías de interés (A, B y C) utilizando la función subset()
-df_typeCompany_vs_avgSalary<- subset(Salary_Prediction_Cleaned, Salary_Prediction_Cleaned$Type.of.ownership %in% c("Company - Private", "Company - Public", "Nonprofit Organization"))
+df_typeCompany_vs_avgSalary<- subset(Salary_Prediction, Salary_Prediction$Type.of.ownership %in% c("Company - Private", "Company - Public", "Nonprofit Organization"))
 
 #
 #
@@ -627,19 +651,16 @@ df_typeCompany_vs_avgSalary<- subset(Salary_Prediction_Cleaned, Salary_Predictio
 
 #ANOVA 3 TIPOS DE COMPAÑIA vs SALARIO
 company <-as.factor(df_typeCompany_vs_avgSalary$Type.of.ownership)
-#boxplot(df_typeCompany_vs_avgSalary$avg_salary~df_typeCompany_vs_avgSalary$Type.of.ownership)
+boxplot(df_typeCompany_vs_avgSalary$avg_salary~df_typeCompany_vs_avgSalary$Type.of.ownership)
 tapply(df_typeCompany_vs_avgSalary$avg_salary,df_typeCompany_vs_avgSalary$Type.of.ownership, mean)
 anova<-aov(lm(df_typeCompany_vs_avgSalary$avg_salary~company))
 summary(anova)
 TukeyHSD(anova)
 
-#########################
-#########################
-#########################
 
 #ANOVA 3 TIPOS DE COMPAÑIA vs RATING
 company <-as.factor(df_typeCompany_vs_avgSalary$Type.of.ownership)
-#boxplot(`PESO PERDIDO`~PROGRAMA)
+boxplot(df_typeCompany_vs_avgSalary$Rating~df_typeCompany_vs_avgSalary$Type.of.ownership)
 tapply(df_typeCompany_vs_avgSalary$Rating,df_typeCompany_vs_avgSalary$Type.of.ownership, mean)
 anova<-aov(lm(df_typeCompany_vs_avgSalary$Rating~company))
 summary(anova)
@@ -649,19 +670,11 @@ TukeyHSD(anova)
 #
 #
 
-#ANOVA TIPO DE COMPAÑIA vs SALARIO
-company <-as.factor(Salary_Prediction_Cleaned$Type.of.ownership)
-#boxplot(`PESO PERDIDO`~PROGRAMA)
-tapply(Salary_Prediction_Cleaned$Rating,Salary_Prediction_Cleaned$Type.of.ownership, mean)
-anova<-aov(lm(Salary_Prediction_Cleaned$Rating~company))
-summary(anova)
-TukeyHSD(anova)
-
-#########################
-#########################
-#########################
-
 #CHI CUADRADO REGION vs RATING (Intervalos)
-resultado <- chisq.test(Salary_Prediction_Cleaned$intervalos, Salary_Prediction_Cleaned$job_region)
+resultado_Region_vs_Rating <- chisq.test(Salary_Prediction$intervalos, Salary_Prediction$job_region)
+print(resultado_Region_vs_Rating)
 
+#CHI CUADRADO REGION VS SALARIO PROMEDIO (intervalos)
+resultado_Region_avg_Salary <- chisq.test(Salary_Prediction$avg_salary_Intervalos, Salary_Prediction$job_region)
+print(resultado_Region_avg_Salary)
 
