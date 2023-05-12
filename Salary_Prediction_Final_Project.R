@@ -525,6 +525,36 @@ t.test(Salary_Prediction$Rating)
 ## de Estados Unidos
 prop.test(139, 558, p = NULL,
           conf.level = 0.95, correct = FALSE, alternative = "two.sided")
+#Codigo para Grafica de distribucion Z
+# mean: media de la variable normal
+# sd: desviación típica de la variable normal
+# lb: límite inferior del área
+# ub: límite superior del área
+# acolor: color del área
+# ...: argumentos adicionales para ser pasados a la función lines
+
+normal_area <- function(mean = 0, sd = 1, lb, ub, acolor = "lightgray", ...,z) {
+  x <- seq(mean - 3 * sd, mean + 3 * sd, length = 100) 
+  
+  if (missing(lb)) {
+    lb <- min(x)
+  }
+  if (missing(ub)) {
+    ub <- max(x)
+  }
+  
+  x2 <- seq(lb, ub, length = 100)    
+  plot(x, dnorm(x, mean, sd), type = "n", ylab = "")
+  
+  y <- dnorm(x2, mean, sd)
+  polygon(c(lb, x2, ub), c(0, y, 0), col = acolor)
+  lines(x, dnorm(x, mean, sd), type = "l", ...)
+
+  
+  arrows(0, 0.1, z, 0, lwd = 2, length = 0.2)
+  text(0, 0.13, z, cex = 1.5)
+  
+}
 
 #PRUEBAS DE HIPOTESIS
 
@@ -546,6 +576,9 @@ prop.test(187, 1602, p = NULL,
           alternative = c("less"),
           conf.level = 0.95, correct = FALSE)
 
+normal_area(mean = 0, sd = 1, lb = -3, ub = -1.96, lwd = 2, acolor = "lightblue",z=-30.68)
+
+
 ## Vemos como nuestro valor p es menor que nuestro alpha, por tanto, rechazamos h0, la proporcion de personas que
 ## trabajan como data analyst en el area de data science en Estados Unidos es menor que en la India
 
@@ -560,8 +593,8 @@ promRating <- mean(data_cleaned_2021$Rating)
 promRating
 
 ## Ahora comprobamos si ha cambiado
-t.test(Salary_Prediction$Rating,
-       alternative = c("two.sided"),
+t.test(Salary_Prediction$Rating, 
+       alternative = "two.sided", paired = FALSE, var.equal = TRUE,
        mu = 3.618868, conf.level = 0.95)
 
 ## Nuestro valor p es menor que el alpha utilizado, rechazamos h0 y concluimos que hay evidencia para afirmar que
@@ -677,4 +710,31 @@ print(resultado_Region_vs_Rating)
 #CHI CUADRADO REGION VS SALARIO PROMEDIO (intervalos)
 resultado_Region_avg_Salary <- chisq.test(Salary_Prediction$avg_salary_Intervalos, Salary_Prediction$job_region)
 print(resultado_Region_avg_Salary)
+
+#REGRESION RATING vs SALARIO
+#Formulación de hipótesis:
+#probar si hay relación entre el salario y el Rating
+attach(Salary_Prediction)
+#Grafico de Dispersion
+plot(Rating,num_comp)
+#Test de Correlacion
+cor.test(Rating,num_comp)
+qt (p = 0.95, df = 551, lower.tail = TRUE)
+#Prueba de Linealidad
+Regresion <- lm(Rating ~ num_comp)
+summary(Regresion)
+#Prueba de homoscedasticidad.
+bptest(Regresion)
+#Prueba de Normalidad
+Residuos<-residuals(Regresion)
+shapiro.test(Residuos)
+#Prueba de Independencia
+dwtest(Regresion)
+#Intervalo de Prediccion
+Y_estim<-predict(Regresion,list(area=10), interval = "confidence")
+Y_estim
+#Intervalo de Confianza
+Y_estim2<-predict(Regresion,list(area=10), interval = "confidence",level = 0.95)
+Y_estim2
+
 
